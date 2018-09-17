@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="ключ 1, ключ 2, ключ 3">
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <title>Прием аккумуляторов</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <nav class="header__nav nav">
+            <a class="nav__logo"><span>Прием</span><span>Аккумуляторов</span></a>
+            <ul class="nav__list  list-unstyled">
+              <li class="nav__item">
+                <a class="nav__link" href="#callback">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#announcement">Прайс-лист</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#aboutus">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#map">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <a class="header__contacts-link header__contacts-link--phone" href="tel:+79294351253">+7(929) 435-12-53</a>
+            <a class="header__contacts-link header__contacts-link--email" href="mailto:sunecoshine@mail.ru">sunecoshine@mail.ru</a>
+          </div>
+        </div>
+        <div class="header__callback callback" id="callback">
+          <ul class="callback__list list-unstyled">
+            <li class="callback__item">
+              <h2>Обратная связь</h2>
+              <p class="callback__text">Оставьте свои контактные данные и мы Вам обязательно перезвоним и ответим на все Ваши вопросы в удобное для Вас время!</p>
+              <form class="callback__form" method="post" action="#">
+                <label class="callback__form-label">
+                  <input type="text" name="user-name" placeholder="Ваше имя:" required>
+                </label>
+                <label class="callback__form-label">
+                  <input type="tel" name="user-tel" placeholder="Ваш номер телефона:" required>
+                </label>
+                <div class="callback__form-label callback__form-label--checkbox">
+                  <input class="visually-hidden" id="checkbox-confirmation" type="checkbox" name="checkbox-confirmation" value="The confirmation" checked>
+                  <label for="checkbox-confirmation">Подтверждаю, что ознакомлен и согласен с условиями и правилами работы в&nbsp;полном объёме.</label>
+                </div>
+                <button class="callback__form-button button" type="submit">Перезвоните мне</button>
+              </form>
+            </li>
+            <li class="callback__item">
+              <img class="callback__img" src="img/car-battery.svg" width="512" height="512" alt="Аккумулятор">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <h1 class="visually-hidden">Аккумуляторы в Иркутске и Черемхово</h1>
+      <section class="announcement" id="announcement">
+        <div class="container">
+          <ul class="announcement__list list-unstyled">
+            <li class="announcement__item">
+              <h2 class="announcement__title">Прием отработанных аккумуляторов</h2>
+              <p class="announcement__text">Не знаете куда сдать б/у аккумулятор? У нас Вы можете выгодно сдать Ваш аккумулятор. Мы осуществляем прием старых АКБ по выгодным ценам.</p>
+              <p class="announcement__text">Стоимость от 50 рублей за 1 кг.</p>
+              <a class="announcement__button button" href="#callback">Заказать обратный звонок</a>
+            </li>
+            <li class="announcement__item announcement__item--img">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Емкость (А/Час)</th>
+                    <th>Цена (за 1кг)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>45-55</td>
+                    <td>от 450 руб</td>
+                  </tr>
+                  <tr>
+                    <td>65-70</td>
+                    <td>от 600 руб</td>
+                  </tr>
+                  <tr>
+                    <td>75-80</td>
+                    <td>от 680 руб</td>
+                  </tr>
+                  <tr>
+                    <td>85-90</td>
+                    <td>от 750 руб</td>
+                  </tr>
+                  <tr>
+                    <td>95-100</td>
+                    <td>от 850 руб</td>
+                  </tr>
+                  <tr>
+                    <td>130-140</td>
+                    <td>от 1400 руб</td>
+                  </tr>
+                  <tr>
+                    <td>180-190</td>
+                    <td>от 2000 руб</td>
+                  </tr>
+                  <tr>
+                    <td>220-230</td>
+                    <td>от 2300 руб</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="aboutus" id="aboutus">
+        <div class="container">
+          <div class="aboutus__text-wrapper">
+            <h2>О нас</h2>
+            <p class="aboutus__text">На сегодняшний день в России отработавшие или, как часто говорят, отработанные аккумуляторы, повсеместно выбрасываются, тем самым наносится непоправимый вред окружающей среде. Население должно знать, можно сдать отработанный аккумулятор. Часто можно встретить объявления о приёме и скупке аккумуляторов в газетах и Интернете от частных лиц: «Покупаем б/у аккумуляторы», «Прием б/у акб», «Прием ups (ИБП)», «Купим аккумуляторы б/у» "Прием отработанных аккумуляторов". Почти каждый такой пункт приема аккумуляторов является посредником между сдатчиками и предприятиями по переработке аккумуляторов. Зачастую это происходит из-за недостатка или недоступности для населения и предприятий, официальных пунктов приёма и утилизации старых автомобильных аккумуляторов, а также стационарных, тяговых и батарей от источников бесперебойного питания. Теперь мы смело можем заявить, что сдать старый аккумулятор в пункт приема можно в г.Иркутск ул.Дорожная 67 и г.Черемхово ул.Первомайска 64. Покупка свинцового лома будет осуществляться в последующем и в регионах. Утилизация аккумуляторных батарей и лома свинца — это сложный и трудоёмкий, однако необходимый для защиты экологии процесс.</p>
+            <p class="aboutus__text">Каждый, у кого возник вопрос, куда сдать аккумулятор, должен знать, что прием аккумуляторов есть у вас в городе. В нашем случае вы можете сдать старый аккумулятор в г.Иркутск ул.Дорожная 67 и г.Черемхово ул.Первомайская 64.</p>
+            <p class="aboutus__text">Мы производим прием аккумуляторов и других видов лома свинца, скупаем лом АКБ и лом свинца.</p>
+          </div>
+        </div>
+      </section>
+      <section class="map" id="map">
+        <div class="container">
+          <h2>Контакты</h2>
+          <ul class="map__list list-unstyled">
+            <li class="map__item">
+              <p>Мы ждем вас по адресу:</p>
+              <p>- Россия, г.Черемхово, ул.Первомайская 64</p>
+              <p>- Россия, г.Иркутск, ул.Дорожная 67</p>
+            </li>
+            <li class="map__item">
+              <p>Мы на связи:</p>
+              <p>
+                <a class="map__link map__link--phone" href="tel:+79294351253">+7(929) 435-12-53</a>
+                <a class="map__link map__link--email" href="mailto:sunecoshine@mail.ru">sunecoshine@mail.ru</a>
+              </p>
+              <p>
+                <a class="map__link map__link--vk" href="https://vk.com/akbirk" target="_blank">Вконтакте</a>
+              </p>
+            </li>
+            <li class="map__item">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab19acf3302ecff93b15d4becfbc87719d054eb51b26ff87dd9294342e814a8e2&amp;source=constructor" width="530" height="240"></iframe>
+            </li>
+            <li class="map__item">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A18f4a5d567880114babda64add2a68c47317052b7f686810749fdb2f6ee4392d&amp;source=constructor" width="530" height="240"></iframe>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list list-unstyled">
+          <li class="footer__item">
+            <span>&copy; «Прием Аккумуляторов», 2018</span>
+          </li>
+          <li class="footer__item">
+            <a href="#">Конфиденциальность</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
